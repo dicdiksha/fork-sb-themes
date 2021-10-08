@@ -6,14 +6,14 @@ html[data-theme='Default'] {
 	--df-black: #000;
 	--df-blue: #024f9d;
 
-	.df-btn{
+	.df-btn {
 		cursor: pointer;
 	}
 
 	.df-back-btn-container {
 		background: var(--df-primary-bg);
 
-		.df-back-btn{
+		.df-back-btn {
 			color: var(--df-blue);
 			background: var(--df-white);
 		}
@@ -199,7 +199,7 @@ html[data-theme='Darkmode'][layout='joy'] {
 		height: 2.5rem;
 		box-shadow: var(--df-box-shadow-6px);
 		border: 0px;
-		cursor:pointer;
+		cursor: pointer;
 	}
 
 	.df-back-btn-container {
@@ -455,7 +455,7 @@ html[data-theme='Darkmode'][layout='old'] {
 
 	// Discussion Forum
 
-	.df-btn{
+	.df-btn {
 		cursor: pointer;
 	}
 
@@ -682,3 +682,300 @@ html[data-theme='Darkmode'][layout='old'] {
 		}
 	}
 }
+
+// New DF theme
+// :root {
+
+// 	// Base Theme color
+// 	--blue: #024f9d;
+// 	--green: #008840;
+// 	--orange: #e55a28;
+// 	--red: #ff4558;
+// 	--indigo: #6610f2;
+// 	--purple: #6f42c1;
+// 	--pink: #e83e8c;
+// 	--yellow: #ffc107;
+// 	--teal: #20c997;
+// 	--cyan: #17a2b8;
+// 	--black: #000000;
+// 	--white: #ffffff;
+
+// 	// Base Theme color variations
+// 	--primary: var(--blue);
+// 	--secondary: #008840;
+// 	--tertiary: #e55a28;
+
+// 	// gray colors shades
+// 	--gray-0: #f2f2f2; // place holder active bg #F2F2F2
+// 	--gray-100: #cccccc; // disable btn bg, icon color #CCCCCC
+// 	--gray-200: #999999; // disable text, place holder text #999999
+// 	--gray-300: #969696; // sub heading 2 #969696
+// 	--gray-400: #999999; // sub heading #666666
+// 	--gray-600: #222222; // Dark theme menu bg color
+// 	--gray-800: #333333; // text color #333333
+
+// 	// primary colors
+// 	--primary-0: #f3f7fa; // bg
+// 	--primary-100: #edf4f9; // default button bg
+// 	--primary-200: #80a7ce; // divider
+// 	--primary-250: #d3e7f4; //pagination bg color
+// 	--primary-300: #7ab4ee; // outline, focus fields
+// 	--primary-400: var(--primary); // button bg, heading, table titles, links, toggles
+// 	--primary-600: #005391; // on press
+// 	--primary-800: #002e50; // hover
+
+// 	// secondary colors
+// 	--secondary-0: #e1ffdf; // toast bg, label
+// 	--secondary-100: #00c786; // button bg bg, toast
+// 	--secondary-200: #07bc81; // button bg
+// 	--secondary-400: var(--secondary); // hover
+
+// 	// tertiary colors
+// 	--tertiary-0: #feedd7; // toast bg, label
+// 	--tertiary-100: #ffa11d; // buttong bg, toast
+// 	--tertiary-400: var(--tertiary); // icon, label, notification bg
+
+// 	// red colors
+// 	--red-0: #fbccd1; // toast bg
+// 	--red-100: #ff6979; // buttong bg, toast
+// 	--red-400: var(--red); // icon color, lable, notification
+
+// 	// fonts
+// 	--font-default-size: 0.875rem;
+// 	--font-size-base: var(--font-default-size); // 14px Assumes the browser default, typically `16px`
+// 	--font-weight-light: 300;
+// 	--font-weight-normal: 400;
+// 	--font-weight-bold: 700;
+// 	--line-height-base: calc(var(--font-size-base) * 1.61803398875);
+// 	--h1-font-size: 2rem; // 32px
+// 	--h2-font-size: 1.75rem; // 28px
+// 	--h3-font-size: 1.5rem; // 24px
+// 	--h4-font-size: 1.2rem; // 20px
+// 	--h5-font-size: 1rem; // 16px
+// 	--h6-font-size: var(--font-size-base); // 14px
+// 	--font-size-lg: var(--h4-font-size); //20px
+// 	--font-size-md: var(--h5-font-size); // 16px
+// 	--font-size-normal: var(--font-size-base); // 14px
+// 	--font-size-sm: 0.75rem; // 12px
+// 	--font-size-xs: 0.625rem; // 10px
+// 	--p-font-size: var(--font-size-base); //14px
+// }
+
+// // Green Theme
+// html[data-theme='Green'] {
+// 	--primary: #008a40;
+// 	--primary-0: #f0faf1;
+// 	--primary-100: #d5e9d7;
+// 	--primary-200: #AFCAB1;
+// 	--primary-300: #74B48B;
+// 	--primary-400: var(--primary);
+// 	--primary-800: #0b8242;
+
+// }
+
+// // Orange Theme
+// html[data-theme='Orange'] {
+// 	--primary: #E7800B;
+// 	--primary-100: #ffe081;
+// 	--primary-200: #D4A56F;
+// 	--primary-300: #FFB561;
+// 	--primary-400: var(--primary);
+// 	--primary-800: #e77b00;
+// }
+
+// html[data-theme='Default'],
+// html[data-theme='Green'],
+// html[data-theme='Orange'] {
+
+// 	--df-alt-clr-fff-333: var(--white);
+
+// 	// Text Color
+// 	--df-text: var(--gray-800);
+// 	--df-text-primary: var(--primary);
+
+// 	// Cards
+// 	--df-card-bg: var(--white);
+
+// 	// Filter option
+// 	--df-filt-opt-brd: var(--gray-400);
+
+// 	// Form fields
+// 	--df-form-field-bg: var(--white);
+// }
+
+// html[data-theme='Darkmode'] {
+// 	// Dark Theme color variation
+// 	--primary: #ffd92a;
+// 	--primary-0: #fffcee;
+// 	--primary-100: #fff8db; // default button bg
+// 	--primary-200: #fffd2a; // divider
+// 	--primary-250: #f1f1c7;
+// 	--primary-300: #ffeb2a; // outline, focus fields
+// 	--primary-400: var(--primary); // button bg, heading, table titles, links, toggles
+// 	--primary-600: #ffc72a; // on press
+// 	--primary-800: #ffb62a; // hover
+
+// 	--secondary: #ffd92a;
+// 	--secondary-200: #ffd92a;
+
+// 	//   For portal override
+// 	--df-alt-clr-fff-333: #333333;
+
+// 	// Text Color
+// 	--df-text: var(--white);
+// 	--df-text-primary: var(--primary);
+
+// 	// Cards
+// 	--df-card-bg: var(--df-alt-clr-fff-333);
+
+// 	// Filter option
+// 	--df-filt-opt-brd: var(--gray-400);
+
+// 	// Form fielda
+// 	--df-form-field-bg: var(--gray-600);
+
+// }
+
+// html[layout='joy'][data-theme='Default'] {
+// 	--df-alt-clr-fff-333: #E9E8D9;
+
+// 	// Cards
+// 	--df-card-bg: var(--white);
+// }
+
+// html[layout='joy'][data-theme='Darkmode'] {
+// 	--df-alt-clr-fff-333: #333;
+// }
+
+// // Styles inside DF
+// lib-lib-entry {
+
+// 	// Top Back btn
+// 	.df-back-btn-container,
+// 	.tag-empty-container,
+// 	.kabab-menu-dropdown-content,
+// 	.discussion-details {
+// 		background: var(--df-alt-clr-fff-333) !important;
+// 	}
+
+// 	.df-close-btn {
+// 		background: var(--primary) !important;
+// 		color: var(--df-alt-clr-fff-333) !important;
+// 	}
+
+// 	.df-back-btn {
+// 		background: var(--df-alt-clr-fff-333) !important;
+// 		color: var(--primary) !important;
+// 	}
+
+// 	// Sidebar Menu
+// 	.sb-sidebar-menu li.df-sidebar-menu-list {
+// 		color: var(--df-text) !important;
+// 	}
+
+// 	.sb-sidebar-menu li.df-sidebar-menu-list.menu-active {
+// 		background-color: var(--df-alt-clr-fff-333) !important;
+// 		color: var(--primary) !important;
+// 		border-left-color: var(--primary) !important;
+// 	}
+
+// 	// Cards
+// 	.category-card,
+// 	.discuss-card-content,
+// 	.related-discuss-card,
+// 	.profileCard {
+// 		color: var(--df-text) !important;
+// 		background: var(--df-card-bg) !important;
+// 	}
+
+// 	.category-card-header-label,
+// 	.discuss-card-title,
+// 	.discuss-user-label,
+// 	.mobile,
+// 	.time,
+// 	.tag-empty-container .tag-empty-label,
+// 	.tag-empty-container .tag-empty-text,
+// 	.profile-label,
+// 	.discussion-details {
+// 		color: var(--df-text) !important;
+// 	}
+
+// 	.discuss-card-label,
+// 	.comments-count {
+// 		color: var(--primary) !important;
+// 	}
+
+// 	.category-card-main-content {
+// 		color: var(--gray-400) !important;
+// 	}
+
+// 	.timing {
+// 		color: var(--df-gray-200) !important;
+// 	}
+
+// 	.dot {
+// 		background: var(--gray-400) !important;
+// 	}
+
+// 	.filter-option {
+// 		color: var(--df-text) !important;
+// 		border-bottom-color: var(--df-filt-opt-brd);
+
+// 		&:hover,
+// 		&.tabs-active {
+// 			color: var(--df-text-primary);
+// 			border-bottom-color: var(--primary);
+// 		}
+// 	}
+
+// 	.text-content {
+// 		background: var(--df-form-field-bg);
+// 	}
+// }
+
+// html[data-theme='Darkmode'] {
+
+// 	lib-lib-entry {
+// 		img {
+// 			filter: invert(1);
+// 		}
+
+// 		.df-close-btn img {
+// 			filter: unset;
+// 		}
+
+// 		.sb-btn-primary {
+// 			color: var(--gray-800) !important;
+// 		}
+// 	}
+// }
+
+// html[layout='joy'] {
+
+// 	lib-lib-entry {
+
+// 		.df-back-btn-container,
+// 		.discussion-forum .discussion-forum-content .discuss-left-panel,
+// 		.df-btn {
+// 			border-radius: 24px !important;
+// 		}
+
+// 		.df-back-btn-container .df-btn-container,
+// 		.discussion-forum .discussion-forum-content .discuss-left-panel {
+// 			padding: 24px !important;
+// 		}
+
+// 		.discussion-forum .discussion-forum-content .discuss-left-panel {
+// 			background: var(--df-alt-clr-fff-333);
+// 		}
+
+// 		.sb-sidebar-menu li.menu-active {
+// 			border-left-color: transparent !important;
+// 		}
+
+// 		.df-btn {
+// 			padding: 10px 16px !important;
+// 			height: auto;
+// 		}
+// 	}
+// }
