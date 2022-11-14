@@ -4,7 +4,7 @@
 }
 
 
-html[data-theme='Default'] {
+html[data-theme='default'] {
 
     // Material Tabs
     --mat-tab-labels-bg: var(--white);
@@ -47,7 +47,7 @@ html[data-theme='Default'] {
 
 }
 
-html[data-theme='Default'][layout='joy'] {
+html[data-theme='default'][layout='joy'] {
 
     --sbfaq-compt-bg: #e9e8d9;
 
@@ -122,7 +122,7 @@ html[layout='joy'] {
     }
 }
 
-html[data-theme='Darkmode'] {
+html[data-theme='default'][data-mode='darkmode'] {
 
     --gray-222: #222;
 
@@ -160,7 +160,7 @@ html[data-theme='Darkmode'] {
 }
 
 html[layout='joy'],
-html[data-theme='Darkmode'] {
+html[data-theme='default'][data-mode='darkmode'] {
 
     // Material Tabs
     --mat-tab-labels-bg: var(--sbt-body-bg2);
@@ -175,7 +175,7 @@ html[data-theme='Darkmode'] {
     --mat-modal-content-bg: var(--sbt-compt-bg);
 }
 
-html[data-theme='Default'],
+html[data-theme='default'],
 html[layout='joy'] {
 
     // Material Modals(Dialog)
