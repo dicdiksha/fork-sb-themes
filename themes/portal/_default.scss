@@ -36,27 +36,21 @@ html[data-theme='default'] {
     --sbt-sidemenu-overlay-bg: 0, 0, 0;
     --sbt-sidemenu-bg: var(--white);
     --sidebar-profil-header-bg: var(--primary-100);
-    --sidebar-li-hover-bg: var(--primary-100);
     --sb-linkmenu-bg: var(--white);
     --sb-linkmenu-text: var(--primary-400);
     --sb-linkmenu-active-text: var(--primary-400);
     --sb-linkmenu-text-hover: var(--white);
-    --sb-linkmenu-bg-hover: var(--primary-color);
-    --sb-linkmenu-icon-bg-hover: var(--white);
     --sb-btn-default-color: var(--white);
     --sb-sidebar-menu-bg-active: var(--primary-0);
-    --sb-sidebar-menu-border-bg: var(--primary-color);
     --sb-sidebar-menu-text: var(--primary-color);
     --sb-graph-section-bg: var(--white);
 
     //header
     --sb-menu-bg: #E5EDF5;
     --sb-menu-item: var(--gray-800);
-    --sb-menu-item-hover: var(--primary-color);
     --sb-header-bg: var(--primary-400);
     --sb-notification-bg: var(--white);
     --sb-header-qrcode-btn-bg: var(--white);
-    --sb-header-qrcode-btn: var(--primary-color);
     --sb-header-qrcode-btn-border: var(--primary-300);
     --sb-search-input-bg: var(--white);
     --sb-search-input-text: var(--gray-200);
@@ -69,11 +63,8 @@ html[data-theme='default'] {
     --sb-search-auto-select: var(--white);
     --sb-footer-bg: var(--primary-color);
     --sbt-green-bg: var(--white);
-    --sbt-filter-switcher-bg: var(--primary-theme);
     --bell-icon: var(--primary-color);
     --sbt-language-dropdown-bg: var(--white);
-    --sb-footer-bg: var(--primary-color);
-    --filter-pref-text: var(--gray-800);
     --sbt-class-bar-label-text: var(--gray-800);
 
     //landing page
@@ -265,27 +256,22 @@ html[data-theme='default'][data-mode='darkmode'] {
     --sbt-sidemenu-overlay-bg: 34, 34, 34;
     --sbt-sidemenu-bg: #333333;
     --sidebar-profil-header-bg: #222222;
-    --sidebar-li-hover-bg: #222222;
     --sb-linkmenu-bg: #333;
     --sb-linkmenu-text: #ffffff;
     --sb-linkmenu-active-text: var(--primary-color);
     --sb-linkmenu-text-hover: #222222;
-    --sb-linkmenu-bg-hover: var(--primary-color);
-    --sb-linkmenu-icon-bg-hover: #222222;
     --sb-btn-default-color: var(--black);
 
     //header
     --sb-menu-bg: var(--black);
     --sb-menu-item: var(--gray-0);
-    --sb-menu-item-hover: var(--primary-color);
     --sb-header-bg: #333333;
     --sb-notification-bg: var(--gray);
     --bell-icon: var(--white);
     --sb-header-qrcode-btn-bg: #333333;
-    --sb-header-qrcode-btn: var(--primary-color);
     --sb-header-qrcode-btn-border: #ffeb2a;
     --sb-search-input-bg: #222222;
-    --sb-search-input-text: var(--gray-200);
+    --sb-search-input-text: #ffffff;
     --sb-search-btn-bg: #efebd8;
     --sb-search-btn-text: #000000;
     --sb-qrcode-divider: var(--primary-0);
@@ -294,14 +280,11 @@ html[data-theme='default'][data-mode='darkmode'] {
     --sb-language-dropdown-item-active: var(--gray);
     --sb-search-auto-select: var(--black);
     --sb-footer-bg: var(--gray);
-    --filter-pref-text: var(--gray-100);
-    --sbt-class-bar-label-text: var(--gray-100);
     --sbt-green-bg: #222222;
+    --sbt-class-bar-label-text: var(--gray-100);
     --sbt-theme-green-selectbox: #ffffff;
-    --sb-search-input-text: #ffffff;
     --sb-search-input-bg: #222222;
     --sb-sidebar-menu-bg-active: var(--sbt-filter-bar-bg);
-    --sb-sidebar-menu-border-bg: var(--primary-color);
     --sb-sidebar-menu-text: var(--primary-600);
     --sb-graph-section-bg: var(--sbt-body-bg2);
 
@@ -362,7 +345,6 @@ html[data-theme='default'][data-mode='darkmode'] {
     --cc-sbcard-data0-bg-active: #ffeb2a;
     --cc-sbcard-type-bg: var(--black);
     --cc-sbcard-type-text: var(--white);
-    --sbt-filter-switcher-bg: var(--primary-theme);
 
     //landing page
     --sb-landing-page-bg: var(--black);
@@ -1578,6 +1560,12 @@ html[data-theme='default'][data-mode='darkmode'] {
     --sbt-box-shadow: rgba(128, 167, 206, 1);
 
     --sbt-badge-text: var(--gray-800);
+    --sb-linkmenu-bg-hover: var(--primary-color);
+    --sb-sidebar-menu-border-bg: var(--primary-color);
+    --sb-menu-item-hover: var(--primary-color);
+    --sb-header-qrcode-btn: var(--primary-color);
+    --sbt-filter-switcher-bg: var(--primary-theme);
+
 }
 
 html[data-theme='default'],
