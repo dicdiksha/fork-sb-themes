@@ -147,6 +147,10 @@ html[data-theme='default'] {
 
     --signup-panel-bg: var(--white);
 
+    //explore-page
+    --sb-section-preference: var(--black);
+    --slick-dots-active-color: var(--gray-200);
+    --slick-dots-color: var(--gray-800);
     .sb-single-resource {
         .content-video__player {
             background: var(--white);
@@ -519,7 +523,11 @@ html[data-theme='default'][data-mode='darkmode'] {
     --quml-close-icon: #fff;
 
     --signup-panel-bg: var(--sbt-body-bg2);
-
+    //explore-page 
+    --sb-explore-hr: #000;
+    --sb-section-preference: var(--white);
+    --slick-dots-active-color: var(--gray-200);
+    --slick-dots-color: var(--gray-800);
     input.sb-form-control:-internal-autofill-selected {
         color-scheme: dark;
         box-shadow: 0 0 0 1000px #333 inset;
@@ -732,11 +740,6 @@ html[data-theme='default'][data-mode='darkmode'] {
             color: var(--black);
         }
     }
-
-    .section-hr {
-        border: 0.03125rem solid #000;
-    }
-
 
     .sb-notification-container .clear-text a {
         color: var(--primary-color) !important;
@@ -1433,8 +1436,7 @@ html[data-theme='default'][data-mode='darkmode'] {
 
     .sbaccordion__panel-content .heading,
     .data-labels,
-    .ui.selection.dropdown .menu>.message,
-    .sb-section-preference {
+    .ui.selection.dropdown .menu>.message {
         color: var(--white);
     }
 
