@@ -440,7 +440,7 @@ html[data-theme='default'][data-mode='darkmode'] {
 
     // notification
     --cc-notification-list-bg: var(--color-222);
-    --cc-notification-list-br: #111111;
+    --cc-notification-list-br: var(--color-222);
     --cc-notification-status-bg: var(--white);
     --cc-notification-date-text: var(--white);
     --cc-notification-logo-bg: var(--gray-0);
@@ -810,7 +810,7 @@ html[data-theme='default'][data-mode='darkmode'] {
             border: 0px solid red !important;
 
             &:hover {
-                background: #F3A819 !important;
+                background: var(--primary-800) !important;
                 color: var(--color-333) !important;
             }
         }
