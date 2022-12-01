@@ -1171,37 +1171,41 @@ html[layout='joy'] {
 
 html[data-mode='darkmode'][layout='joy'] {
     --primary-color: #ffd92a;
-    --sb-search-btn-bg: #333333;
+    --primary-300: #ffeb2a;
+    --color-111: #111111;
+    --color-222: #222222;
+    --color-333: #333333;
+    --color-444: #444444;
+    --sb-search-btn-bg: var(--color-333);
     --sb-search-btn-text: var(--primary-color);
 
     //Joy theme header
-    --sbt-header-bg: #333333;
+    --sbt-header-bg: var(--color-333);
     --sbt-page-header-bg: var(--sbt-header-bg);
     --sbt-theme-green-selectbox: var(--gray-200);
     --sbt-language-dropdown-icon: var(--primary-color);
-    --sbt-language-dropdown-bg: #000000;
-    --sbt-language-dropdown-item-hover-bg: #333333;
+    --sbt-language-dropdown-bg: var(--black);
+    --sbt-language-dropdown-item-hover-bg: var(--color-333);
     --sbt-language-dropdown-item-hover-text: var(--primary-color);
     --sbt-language-selectbox: var(--primary-color);
-    --sbt-filter-bar-bg: #333;
+    --sbt-filter-bar-bg: var(--color-333);
     --sb-notification-bg: var(--black);
     --sb-footer-bg: var(--gray);
     --sbt-footer-info-links: var(--white);
     --sbt-footer-info-links-hover: var(--primary-color);
     --sbt-language-dropdown-item: var(--white);
     --sbt-filter-switcher-bg: var(--primary-color);
-    --sbfaq-compt-bg: #222;
-    --cc-listView-compt-title: #fff;
-    --cc-listView-compt-itemText: #fff;
-    --cc-carousel-title: #fff;
+    --sbfaq-compt-bg: var(--color-222);
+    --cc-listView-compt-title: var(--white);
+    --cc-listView-compt-itemText: var(--white);
+    --cc-carousel-title: var(--white);
     // lazy loading
-    --lazyload-bg: #333333;
-    --grey-nuance-lighter: #333333;
-    --grey-nuance-darker: #111;
+    --lazyload-bg: var(--color-333);
+    --grey-nuance-lighter: var(--color-333);
+    --grey-nuance-darker: var(--color-111);
     --fade-grey: #f2f2f2;
-
-    --cc-sbcard-data2-bg: #444444;
-    --cc-sbcard-data2-bg-active: #ffeb2a;
+    --cc-sbcard-data2-bg: var(--color-444);
+    --cc-sbcard-data2-bg-active: var(--primary-300);
 
     //Modal
     --sb-modal-header-text: var(--white);
@@ -1217,13 +1221,13 @@ html[data-mode='darkmode'][layout='joy'] {
             color: var(--black);
 
             &:hover {
-                background-color: #ffeb2a;
+                background-color: var(--primary-300);
             }
         }
     }
 
     .sbt-filter-text {
-        background: #222 !important;
+        background: var(--color-222) !important;
     }
 
     .multi-select-container .list-border,
@@ -1233,22 +1237,22 @@ html[data-mode='darkmode'][layout='joy'] {
     }
 
     .sbt-back-header .content-header {
-        background-color: #444 !important;
+        background-color: var(--color-444) !important;
     }
 
     .ui.selection.sbt-dropdown.dropdown.sbt-green {
-        color: #fff;
+        color: var(--white);
     }
 
     .profile-bg-c-4 {
-        background: #222222 !important;
-        color: #ffffff;
+        background: var(--color-222) !important;
+        color: var(--white);
     }
 
     .content-preference__info {
         @media screen and (max-width: 992px) {
-            background: #222222 !important;
-            color: #ffffff;
+            background: var(--color-222) !important;
+            color: var(--white);
         }
     }
 
@@ -1264,11 +1268,7 @@ html[data-mode='darkmode'][layout='joy'] {
 
     .sbaccordion__panel-header .icon-svg,
     .help-page__content .panel-heading .icon-svg {
-        background: #222222;
-    }
-
-    .sbt-dropdown-language.ui.selection.sbt-dropdown.dropdown>.text span:last-child::before {
-        // background: url(assets/images/Language-white.svg) no-repeat !important;
+        background: var(--color-222);
     }
 
     .sbt-footer-title {
