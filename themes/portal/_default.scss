@@ -76,7 +76,6 @@ html[data-theme='default'] {
 
     //profile page
     --sb-profile-certificate-bg: var(--white);
-    --sb-course-progress-status-label: #333333;
     --sb-list-data: var(--gray-400);
     --sb-list-items: #333333;
     --sb-profile-bg-c-4: var(--primary-0);
@@ -360,7 +359,6 @@ html[data-theme='default'][data-mode='darkmode'] {
 
     //profile page
     --sb-profile-certificate-bg: var(--color-333);
-    --sb-course-progress-status-label: var(--black);
     --sb-list-data: var(--gray-100);
     --sb-list-items: var(--white);
     --sb-profile-bg-c-4: var(--color-444);
@@ -1563,13 +1561,6 @@ html[data-theme='default'][data-mode='darkmode'] {
     --sbt-box-shadow-6px: 0.375rem 0.375rem 0.125rem 0 var(--sbt-box-shadow-black);
     --sbt-box-shadow-3px: 0.1875rem 0.1875rem 0.125rem 0 var(--sbt-box-shadow-black);
     --sbt-box-shadow: rgba(128, 167, 206, 1);
-
-    --sbt-badge-text: var(--gray-800);
-    --sb-linkmenu-bg-hover: var(--primary-color);
-    --sb-sidebar-menu-border-bg: var(--primary-color);
-    --sb-menu-item-hover: var(--primary-color);
-    --sb-header-qrcode-btn: var(--primary-color);
-    --sbt-filter-switcher-bg: var(--primary-theme);
 
 }
 
