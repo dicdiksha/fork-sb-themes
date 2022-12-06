@@ -10,8 +10,7 @@ html[data-theme='default'][layout='joy'] {
     --primary-300: #74B9EB;
     --primary-200: #AFCCE1;
     --primary-800: hsl(var(--primary-hs), 40%);
-    --primary-100: #f1f1e7;
-    --primary-300: #ececde;
+    --primary-100: #edf4f9;
     --sbt-filter-bar-bg: #E9E8D9;
     --sb-search-btn-bg: #333333;
     --sb-search-btn-text: #ffffff;
@@ -20,7 +19,7 @@ html[data-theme='default'][layout='joy'] {
 
     app-signup {
         .sb-checkbox.sb-checkbox-primary label:before {
-            border-color: #004E8A;
+            border-color: var(--primary-color);
         }
     }
 }
@@ -33,10 +32,10 @@ html[layout='joy'] {
     --sbt-primary-bg: var(--primary-theme);
     --sbt-border-chapter: #E4E8EE;
     --sbt-language-dropdown-bg: var(--white);
-    --sbt-language-dropdown-item: #008840;
-    --sbt-language-selectbox: #008840;
+    --sbt-language-dropdown-item: var(--green);
+    --sbt-language-selectbox: var(--green);
     --sbt-language-dropdown-item-hover-bg: rgba(0, 0, 0, .05);
-    --sbt-language-dropdown-item-hover-text: #008840;
+    --sbt-language-dropdown-item-hover-text: var(--green);
     --sb-profile-bg-c-4: var(--sbt-body-bg);
 
     //Modal
@@ -45,7 +44,7 @@ html[layout='joy'] {
     --sb-modal-actions-bg: var(--sbt-compt-bg);
 
     --sb-sidebar-menu-bg-active: var(--sbt-body-bg);
-    --sb-sidebar-menu-border-bg: #024f9d;
+    --sb-sidebar-menu-border-bg: var(--primary-color);
     --sb-sidebar-menu-text: #333;
     --sb-graph-section-bg: var(--sbt-body-bg2);
 
@@ -115,13 +114,6 @@ html[layout='joy'] {
 
     .sbt-fluid-content-bg {
         background: var(--sbt-body-bg2);
-    }
-
-    .sb-btn-link-primary {
-        &:hover {
-            color: var(--primary-800);
-            background-color: var(--primary-100);
-        }
     }
 
     .sbhelp_container__left {
@@ -288,7 +280,7 @@ html[layout='joy'] {
                 &::before {
                     content: "\2715";
                     font-size: calculateRem(18px);
-                    color: #e82520;
+                    color: var(--red);
                 }
 
             }
@@ -533,12 +525,6 @@ html[layout='joy'] {
         width: 100%;
     }
 
-    .header-info {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
     .sb-single-resource {
         .content-video__player {
             box-shadow: var(--sbt-box-shadow-6px);
@@ -617,10 +603,6 @@ html[layout='joy'] {
         border-radius: var(--sbt-bradius-24);
     }
 
-    .accordion-item-header-expanded .sbaccordion__panel-header {
-        border-radius: var(--sbt-bradius-24) var(--sbt-bradius-24) 0px 0px;
-    }
-
     .sbaccordion__panel-content {
         border-bottom-left-radius: var(--sbt-bradius-24);
         border-bottom-right-radius: var(--sbt-bradius-24);
@@ -667,12 +649,15 @@ html[layout='joy'] {
     }
 
     .accordion-item-header-expanded .sbaccordion__panel-header {
-        border: 0px;
+        border-radius: var(--sbt-bradius-24) var(--sbt-bradius-24) 0px 0px;
     }
 
     .sbaccordion__panel-header {
         border: 0px;
         border-radius: var(--sbt-bradius-24);
+        background: var(--sbt-compt-bg);
+        padding: calculateRem(16px);
+        height: calculateRem(48px);
     }
 
     .ui.styled.accordion .accordion .content,
@@ -740,26 +725,8 @@ html[layout='joy'] {
         }
     }
 
-    .sbaccordion {
-        &__panel-header {
-            border-top-left-radius: var(--sbt-bradius-24);
-            border-top-right-radius: var(--sbt-bradius-24);
-            background: var(--sbt-compt-bg);
-            border: none;
-            padding: calculateRem(16px);
-            height: calculateRem(48px);
-        }
-    }
-
     .sb-toc-credits .sb-bg-color-gray-0 .sbaccordion__panel-header {
         height: calculateRem(56px) !important;
-    }
-
-    sb-accordion-header[aria-expanded="false"] {
-        .sbaccordion__panel-header {
-            border-bottom-left-radius: var(--sbt-bradius-24);
-            border-bottom-right-radius: var(--sbt-bradius-24);
-        }
     }
 
     .sb-toc-child-item {
@@ -1018,10 +985,10 @@ html[layout='joy'] {
 
     .sb-browse-btn {
         height: 2.1rem;
-        border: calculateRem(2px) solid #7ab4ee;
-        color: #7ab4ee;
+        border: calculateRem(2px) solid var(--primary-300);
+        color: var(--primary-300);
         font-weight: bold;
-        background: #edf4f9;
+        background: var(--primary-100);
     }
 
     .sb-btn-nolayer {
