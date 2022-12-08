@@ -1,8 +1,4 @@
-@function calculateRem($size) {
-    $remSize: $size / 16px;
-    @return #{$remSize}rem;
-}
-
+@use "~@project-sunbird/sb-styles/assets/mixins/mixins" as *;
 
 html[data-theme='default'] {
 
@@ -45,14 +41,6 @@ html[data-theme='default'] {
         }
     }
 
-}
-
-html[data-theme='default'][layout='joy'] {
-
-    --sbfaq-compt-bg: #e9e8d9;
-
-    // accordion
-    --sb-mat-accordion-bg: var(--sbfaq-compt-bg);
 }
 
 html[layout='joy'] {
