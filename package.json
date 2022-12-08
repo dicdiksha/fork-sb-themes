@@ -24,5 +24,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@project-sunbird/sb-styles": "0.0.12"
   }
 }

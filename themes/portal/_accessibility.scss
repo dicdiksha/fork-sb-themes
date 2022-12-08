@@ -1,8 +1,4 @@
-//@use './../../node_modules/@project-sunbird/sb-styles/assets/mixins/mixins' as *;
-@function calculateRem($size) {
-	$remSize: $size / 16px;
-	@return #{$remSize}rem;
-}
+@use "~@project-sunbird/sb-styles/assets/mixins/mixins" as *;
 html[accessible-theme="accessible"][layout='joy'][data-mode="darkmode"] {
     --accessible-green: #004D26;
 
