@@ -26,15 +26,20 @@ html[data-color='purple'] {
     --primary-800: hsl(var(--primary-hsl), 25%);
   
 
-    --accent-color-light:#00c7d1; // hsl(183, 100%, 41%);
-    --accent-color:#00A0A8; // hsl(183, 100%, 33%);
-    --accent-color-dark:#007980; // hsl(183, 100%, 25%);
+    // --accent-color-light:#00c7d1; // hsl(183, 100%, 41%);
+    // --accent-color:#00A0A8; // hsl(183, 100%, 33%);
+    // --accent-color-dark:#007980; // hsl(183, 100%, 25%);
 
     --sbt-body-bg: #dddbf0;
     --sbt-body-bg2: #eeedf8;
     --sbt-primary-bg: var(--primary-theme);
     --sbt-compt-bg: var(--sbt-body-bg);
-    --sb-linkmenu-bg-hover:var(--accent-color);
+    --sb-linkmenu-bg-hover: var(--primary-color);
     --sb-footer-bg: var(--primary-theme);
+    --sbfaq-compt-bg:var(--sbt-body-bg);
+    
+    .sb-bg-white {
+        --white:var(--sbt-body-bg2);
+    }
 
 }
