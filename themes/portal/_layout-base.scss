@@ -2,7 +2,13 @@
 
 html[data-theme='default'] {
     --primary-theme: var(--primary-color);
-    --primary-color-rgb: rgb(2, 79, 157);
+    --primary-theme-hsl: 210, 97%;
+    --primary-theme-rgb: rgb(2, 79, 156);
+    --primary-theme-contrast: #fff;
+    --primary-theme-contrast-rgb: rgb(255, 255, 255);
+    --primary-theme-shade: hsl(var(--primary-theme-hsl), 56%);
+    --primary-theme-tint: hsl(var(--primary-theme-hsl), 76%);
+
   
     --sbt-body-bg: #E5EDF5;
     --sbt-body-bg2: #f3f7fa;
@@ -33,7 +39,6 @@ html[data-theme='default'] {
     --sbt-green-bg: var(--white);
     --sbt-language-dropdown-bg: var(--white);
     --sbt-class-bar-label-text: var(--gray-800);
-
     --sb-filter-bar-bg: var(--white);
     --sb-container-bg: var(--white);
     --sidebar-profil-header-bg: var(--primary-100);
@@ -82,7 +87,7 @@ html[data-theme='default'] {
     --sb-course-progress-status-label: #333333;
     --sb-list-data: var(--gray-400);
     --sb-list-items: #333333;
-    --sb-profile-bg-c-4: var(--sb-body-bg2);
+    --sb-profile-bg-c-4: var(--sbt-body-bg2);
     --sb-profile-page-basic-label-bg: var(--white);
 
     //pagination
@@ -103,8 +108,8 @@ html[data-theme='default'] {
     --sb-drodown-selection-active: #96c8da;
     --ui-seleted-label-bg: #e8e8e8;
     --ui-seleted-label-bg-hover: #e0e0e0;
-    --state-medium-container-bg: var(--sb-body-bg2);
-    --sb-class-bar-bg: var(--sb-body-bg2);
+    --state-medium-container-bg: var(--sbt-body-bg2);
+    --sb-class-bar-bg: var(--sbt-body-bg2);
     --sb-dropdown-menu-text: rgba(var(--rc-rgba-black), .8);
     --ui-dropdown-menu-selected-item-bg: rgba(var(--rc-rgba-black), .03);
     --ui-dropdown-menu-selected-item: rgba(var(--rc-rgba-black), .95);
@@ -147,7 +152,7 @@ html[data-theme='default'] {
     //joy theme
     --themeflower-bg: #ffd92a;
     --visit-helpcenter-bg: var(--white);
-    --sbfaq-compt-bg: var(--white);
+    //--sbfaq-compt-bg: var(--white);
     --signup-panel-bg: var(--white);
 
     //explore-page

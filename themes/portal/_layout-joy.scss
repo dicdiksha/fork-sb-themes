@@ -1,9 +1,9 @@
-@use "~@project-sunbird/sb-styles/assets/mixins/mixins" as *;
+@use "~@project-sunbird/sb-styles/assets/mixins/mixins"as *;
+
 html[layout='joy'] {
     --primary-theme: #FFD954;
     --primary-hs: 206, 100%;
     --primary-color: #024f9d;
-    --primary-300: #74B9EB;
     --primary-200: #AFCCE1;
     --primary-800: hsl(var(--primary-hs), 40%);
     --primary-100: #f1f1e7;
@@ -17,13 +17,12 @@ html[layout='joy'] {
 
 
     --sbt-header-bg: var(--primary-theme);
-   
+
     --sbt-border-chapter: #E4E8EE;
     --sbt-language-dropdown-item: var(--green);
     --sbt-language-selectbox: var(--green);
     --sbt-language-dropdown-item-hover-bg: rgba(var(--rc-rgba-black), .05);
     --sbt-language-dropdown-item-hover-text: var(--green);
-    --sb-profile-bg-c-4: var(--sbt-body-bg);
     --sb-linkmenu-bg: var(--white);
     --sb-linkmenu-text: var(--primary-400);
     --sb-linkmenu-active-text: var(--primary-400);
@@ -31,7 +30,7 @@ html[layout='joy'] {
     --sb-linkmenu-bg-hover: var(--primary-color);
     --sb-linkmenu-icon-bg-hover: var(--white);
     --sb-btn-default-color: var(--white);
-
+    --sb-profile-bg-c-4: var(--sbt-body-bg);
     //Modal
     --sb-modal-header-text: var(--black);
     --sb-modal-content-bg: var(--sbt-compt-bg);
@@ -42,7 +41,8 @@ html[layout='joy'] {
     --sb-sidebar-menu-text: var(--gray-800);
     --sb-graph-section-bg: var(--sbt-body-bg2);
 
-    --cc-faq-panel-body-bg:var(--sbt-body-bg2);
+    --cc-faq-panel-body-bg: var(--sbt-body-bg2);
+
     app-signup {
         .sb-checkbox.sb-checkbox-primary label:before {
             border-color: var(--primary-color);
@@ -193,6 +193,7 @@ html[layout='joy'] {
     .sb-btn-link-primary {
         box-shadow: none;
         padding: calculateRem(8px) calculateRem(16px);
+
         &:hover {
             border-radius: calculateRem(16px);
             color: var(--primary-800);
@@ -1054,7 +1055,8 @@ html[layout='joy'] {
         background: none;
         padding: 0px;
         display: flex;
-        background: var(--sbt-header-bg) !important;
+        background: var(--sbt-header-bg);
+        color: var(--primary-theme-contrast);
         border-radius: 1.5rem 1.5rem 0 0px;
         padding: 0.5rem 1rem;
         position: relative;
@@ -1109,13 +1111,13 @@ html[layout='joy'] {
             border-radius: calculateRem(16px);
         }
 
-        .sb-back-actionbar .sb-btn-link-primary {
-            align-self: baseline;
-        }
-
         .sb-back-actionbar {
             padding-bottom: 2.5rem;
             margin: 0 0;
+
+            .sb-btn-link-primary {
+                align-self: baseline;
+            }
         }
 
         .content-video__player__details {
