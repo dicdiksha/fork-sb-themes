@@ -2,6 +2,13 @@
 
 html[layout='joy'] {
     --primary-theme: #FFD954;
+    --primary-theme-hsl: 47, 100%;
+    --primary-theme-rgb: rgb(255, 217, 84);
+    --primary-theme-contrast: #000;
+    --primary-theme-contrast-rgb: rgb(0, 0, 0);
+    --primary-theme-shade: hsl(var(--primary-theme-hsl), 60%);
+    --primary-theme-tint: hsl(var(--primary-theme-hsl), 40%);
+    
     --primary-hs: 206, 100%;
     --primary-color: #024f9d;
     --primary-200: #AFCCE1;
