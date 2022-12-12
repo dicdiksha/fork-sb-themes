@@ -1,17 +1,17 @@
 @use "~@project-sunbird/sb-styles/assets/mixins/mixins" as *;
 
 html[data-mode='darkmode'] {
-    --primary-theme: #ffd92a;
-    --primary-theme-hs: 49.3, 100%;
-    --primary-color: hsl(var(--primary-theme-hs), 58.24%);
-    --primary-0: hsl(var(--primary-theme-hs), 88%); // #fffcee;
-    --primary-100: hsl(var(--primary-theme-hs), 82%); // #fff8db; // default button bg
-    --primary-200: hsl(var(--primary-theme-hs), 76%); // #fffd2a; // divider
-    --primary-250: hsl(var(--primary-theme-hs), 70%); // #f1f1c7;
-    --primary-300: hsl(var(--primary-theme-hs), 64%); // #ffeb2a; // outline, focus fields
+    // --primary-theme: var(--primary-theme);
+    // --primary-theme-hsl: 49.3, 100%;
+    --primary-color: hsl(var(--primary-theme-hsl), 58.24%);
+    --primary-0: hsl(var(--primary-theme-hsl), 88%); // #fffcee;
+    --primary-100: hsl(var(--primary-theme-hsl), 82%); // #fff8db; // default button bg
+    --primary-200: hsl(var(--primary-theme-hsl), 76%); // #fffd2a; // divider
+    --primary-250: hsl(var(--primary-theme-hsl), 70%); // #f1f1c7;
+    --primary-300: hsl(var(--primary-theme-hsl), 64%); // #ffeb2a; // outline, focus fields
     --primary-400: var(--primary-color); // button bg, heading, table titles, links, toggles
-    --primary-600: hsl(var(--primary-theme-hs), 52%); // #ffc72a; // on press
-    --primary-800: hsl(var(--primary-theme-hs), 46%); //  #ffb62a; // hover
+    --primary-600: hsl(var(--primary-theme-hsl), 52%); // #ffc72a; // on press
+    --primary-800: hsl(var(--primary-theme-hsl), 46%); //  #ffb62a; // hover
     --secondary-200: var(--primary-color);
     --secondary-color: var(--primary-color);
     --gray-800: var(--white);
