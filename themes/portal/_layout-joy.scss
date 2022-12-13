@@ -8,7 +8,7 @@ html[layout='joy'] {
     --primary-theme-contrast-rgb: rgb(0, 0, 0);
     --primary-theme-shade: hsl(var(--primary-theme-hsl), 60%);
     --primary-theme-tint: hsl(var(--primary-theme-hsl), 40%);
-    
+
     --primary-hs: 206, 100%;
     --primary-color: #024f9d;
     --primary-200: #AFCCE1;
@@ -19,12 +19,8 @@ html[layout='joy'] {
     --sbt-body-bg: #e9e8d9;
     --sbt-body-bg2: #f3f3e5;
     --sbt-primary-bg: var(--primary-theme);
-
     --sbt-filter-bar-bg: var(--sbt-body-bg);
-
-
     --sbt-header-bg: var(--primary-theme);
-
     --sbt-border-chapter: #E4E8EE;
     --sbt-language-dropdown-item: var(--green);
     --sbt-language-selectbox: var(--green);
@@ -38,6 +34,7 @@ html[layout='joy'] {
     --sb-linkmenu-icon-bg-hover: var(--white);
     --sb-btn-default-color: var(--white);
     --sb-profile-bg-c-4: var(--sbt-body-bg);
+
     //Modal
     --sb-modal-header-text: var(--black);
     --sb-modal-content-bg: var(--sbt-compt-bg);
@@ -179,7 +176,7 @@ html[layout='joy'] {
     }
 
     .sb-btn-round {
-        background: var(--white);
+        background: var(--primary-color);
         border-radius: 50% !important;
         box-shadow: var(--sbt-box-shadow-6px) !important;
         min-width: 3rem !important;
