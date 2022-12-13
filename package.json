@@ -1,6 +1,6 @@
 {
   "name": "@project-sunbird/sb-themes",
-  "version": "0.0.86",
+  "version": "0.0.87",
   "description": "Sunbird project application themes",
   "main": "index.js",
   "scripts": {
@@ -24,6 +24,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@project-sunbird/sb-styles": "0.0.12"
+    "@project-sunbird/sb-styles": "0.0.13"
   }
 }
