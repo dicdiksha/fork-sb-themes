@@ -23,7 +23,7 @@ $primary-hsl: hue($primary-color), saturation($primary-color);
 $primary-color-rgb:  red($primary-color), green($primary-color), blue($primary-color);
 $primary-color-shade: darken(adjust-hue($primary-color, -5), 10%);
 $primary-color-tint: lighten(adjust-hue($primary-color, 5), 10%);
-$primary-color-contrast: #000000;
+$primary-color-contrast: #fff;
 $primary-color-contrast-rgb: red($primary-color-contrast), green($primary-color-contrast), blue($primary-color-contrast);
 $primary-0: lighten(adjust-hue($primary-color, 25), 45%);
 $primary-100: lighten(adjust-hue($primary-color, 20), 40%);
