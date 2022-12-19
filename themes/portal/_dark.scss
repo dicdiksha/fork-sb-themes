@@ -458,17 +458,18 @@ html[data-mode='darkmode'] {
         fill: #999;
     }
 
-    .faq-report-container h6 {
-        color: #f2f2f2;
-    }
-
-    .faq-report-container sb-form .multi-select-section-app .multi-select-container {
-        sb-caret-down svg {
-            filter: none;
+    .faq-report-container {
+        h6 {
+            color: #f2f2f2;
         }
-
-        .list-border ul {
-            color: var(--black);
+        sb-form .multi-select-section-app .multi-select-container {
+            sb-caret-down svg {
+                filter: none;
+            }
+    
+            .list-border ul {
+                color: var(--black);
+            }
         }
     }
 
@@ -728,18 +729,18 @@ html[data-mode='darkmode'] {
 
     }
 
-    .chatbox-cover .chatbox {
-        border: calculateRem(1px) solid var(--primary-color) !important;
-        background-color: var(--primary-color) !important;
-    }
-
-    .chatbox-cover .chatboxText {
-        background: var(--primary-color) !important;
-        color: var(--color-000) !important;
-    }
-
-    .chatbox-cover .chatbox ::after {
-        border-color: var(--primary-color) var(--primary-color) transparent transparent !important;
+    .chatbox-cover {
+        .chatbox {
+            border: calculateRem(1px) solid var(--primary-color) !important;
+            background-color: var(--primary-color) !important;
+            &::after {
+                border-color: var(--primary-color) var(--primary-color) transparent transparent !important;
+            }
+        }
+        .chatboxText {
+            background: var(--primary-color) !important;
+            color: var(--color-000) !important;
+        }
     }
 
     .overlay-sidebar {
@@ -846,17 +847,18 @@ html[data-mode='darkmode'] {
         color: var(--black);
     }
 
-    .sb-modal-dropdown-web ul {
-        background-color: var(--black);
-        color: var(--white);
-        border: calculateRem(2px) solid var(--black);
-        box-shadow: none;
-    }
-
-    .sb-modal-dropdown-web .selected-option {
-        background: var(--primary-color) !important;
-        color: var(--black);
-    }
+    .sb-modal-dropdown-web {
+        ul {
+            background-color: var(--black);
+            color: var(--white);
+            border: calculateRem(2px) solid var(--black);
+            box-shadow: none;
+        }
+        .selected-option {
+            background: var(--primary-color) !important;
+            color: var(--black);
+        }
+    }    
 
     .sb-onboard sb-form .sb-textbox,
     sb-form .sb-textbox,
@@ -878,8 +880,6 @@ html[data-mode='darkmode'] {
             }
         }
     }
-
-
 
     .sb-members-list-item:hover,
     .sb-members-list-item.active {
@@ -1226,31 +1226,6 @@ html[data-mode='darkmode'] {
         }
     }
 
-    .file-download__popup {
-        background: var(--color-444) !important;
-    }
-
-    .file-download .close-btn .close-icon {
-
-        &:after,
-        &:before {
-            background: var(--white) !important;
-        }
-
-        &[data-animation=showShadow]:not(.showShadow):hover {
-            box-shadow: 0 0 0 0.25rem var(--white) inset !important;
-        }
-    }
-
-    .file-download__text,
-    .file-download__size {
-        color: var(--white) !important;
-    }
-
-    .file-download__overlay {
-        background: rgba(var(--rc-rgba-black), .8);
-    }
-
     sui-multi-select.ui.selection.dropdown,
     sui-select.ui.selection.dropdown {
         background: var(--sb-dropdown-menu-bg) !important;
@@ -1360,14 +1335,6 @@ html[data-mode='darkmode'] {
 
     .add-adminrole__content {
         background: var(--sbt-compt-bg) !important;
-    }
-
-    .no-result-container {
-        background: var(--sbt-compt-bg) !important;
-
-        .no-result-text {
-            color: var(--white);
-        }
     }
 
     //   Data tables
