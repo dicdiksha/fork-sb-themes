@@ -33,7 +33,7 @@ html[data-theme="Orange"] {
 }
 
 // Dark Mode
-html[data-theme="Darkmode"],
+html[data-theme="default"][data-mode="darkmode"],
 html[data-theme="JOYFUL"][data-mode="DARKMODE"] {
   // Dark Theme color variation
   --primary-hs: 49, 100%; // template primary color // #ffd829
