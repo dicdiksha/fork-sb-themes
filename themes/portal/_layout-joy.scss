@@ -53,11 +53,6 @@ html[layout='joy'] {
         }
     }
 
-    .profile-bg-c-3 {
-        border-radius: 2rem;
-        margin-top: calculateRem(24px);
-    }
-
     .sb--card {
         border-radius: 1rem !important;
         box-shadow: var(--sbt-box-shadow-6px);
@@ -67,94 +62,12 @@ html[layout='joy'] {
         border-radius: 0.5rem;
     }
 
-    .sb-label-badge {
-        border-radius: 0.25rem;
-    }
-
-    .sbt-fluid-content-bg {
-        padding: 0rem 0;
-        border-radius: 2rem 0 0 2rem;
-        margin: 0 0 0 2%;
-        padding: 0 5% 2rem 3%;
-
-        &[dir="rtl"] {
-            border-radius: 2rem 2rem 0 0;
-            padding: 0 3% 2rem 5%;
-        }
-    }
-
-    .sbt-fluid-content-bg.sbt-footer-container {
-        margin: 0 0 0 0;
-    }
-
     .sbt-filter {
         margin-top: 2rem !important;
     }
 
-    .sbt-inside-page-container,
-    app-my-groups .sbt-center-container,
-    app-group-details .sbt-center-container,
-    app-add-activity-content-types .sbt-center-container,
-    app-activity-search .sbt-center-container,
-    app-activity-details .sbt-center-container,
-    app-add-member .sbt-center-container {
-        background: var(--sbt-body-bg2);
-        padding: 2rem 5% 2rem 3%;
-        margin: 0 0 0 2%;
-        border-radius: 2rem 0 0 2rem;
-
-        &[dir="rtl"] {
-            border-radius: 2rem 2rem 0 0;
-            padding: 2rem 5% 2rem 3%;
-        }
-    }
-
-    .profile-bg-c-4 {
-        border-radius: 2rem;
-    }
-
-    .sbt-fluid-header-bg {
-        background: var(--sbt-body-bg);
-    }
-
-    .sbt-fluid-content-bg {
-        background: var(--sbt-body-bg2);
-    }
-
-    .sbhelp_container__left {
-        border-radius: 1.5rem;
-    }
-
-    .navBlock .pdf-nav-unit {
-        color: var(--gray-800) !important;
-    }
-
-    .sbt-fluid-header-bg {
-        display: block;
-    }
-
-
-    .sb-onboard sb-form .sb-textbox,
-    .sb-onboard sb-form .list-border,
-    sb-form .multi-select-container .list-border,
-    sb-form .sb-textbox,
-    sb-form .async-text {
-        border-radius: 1.75rem;
-    }
-
-    .kabab-menu-dropdown-content {
-        border-radius: var(--sbt-bradius-16);
-
-        .list {
-
-            &:hover,
-            &:active {
-                border-radius: var(--sbt-bradius-16);
-            }
-        }
-    }
-
     /* new button style */
+    // Buttons needs to be removed after cleaning all the components from portal
     .sb-btn {
         box-shadow: var(--sbt-box-shadow-6px);
         border: 0px;
@@ -203,103 +116,15 @@ html[layout='joy'] {
             background-color: var(--primary-100);
         }
     }
-
     .sb-btn-square.sb-btn-sm {
         box-shadow: none;
     }
+    // Buttons needs to be removed after cleaning all the components from portal
 
+
+    // After removing all the sui-select box this needs to be removed
     .ui.dropdown.selection.sb-form-control .menu {
         border-radius: 0 0 var(--sbt-bradius-16) var(--sbt-bradius-16);
-    }
-
-    .sb-pageSection-content .slick-slider .slick-track {
-        padding-bottom: calculateRem(8px);
-    }
-
-    .sbt-dialcode-inputsearch {
-        border-radius: var(--sbt-bradius-16);
-        box-shadow: var(--sbt-box-shadow-6px);
-    }
-
-    .sb-search-box .sb-search-input {
-        height: calculateRem(40px);
-        border-radius: var(--sbt-bradius-24) 0 0 var(--sbt-bradius-24);
-    }
-
-    .sb-search-box.hide-btn .sb-search-input {
-        border-radius: var(--sbt-bradius-24);
-    }
-
-    .sb-search-box.no-btn .sb-search-input {
-        height: 2.5rem;
-        border-radius: var(--sbt-bradius-24);
-    }
-
-    .sb-search-box .icon.search {
-        top: 0.75rem;
-    }
-
-    .sb-btn.sb-btn-normal.sbt-dialcode-btn {
-        border-radius: 0px var(--sbt-bradius-16) var(--sbt-bradius-16) 0px;
-        box-shadow: none;
-    }
-
-    // modal styles
-    .sb-modal {
-        .ui.modal {
-            box-shadow: var(--sbt-box-shadow-6px);
-            border-radius: var(--sbt-bradius-24);
-            background-color: var(--sbt-compt-bg);
-
-            .sb-modal-header {
-                background-color: var(--sbt-compt-bg);
-                color: var(--sb-modal-header-text);
-                border-radius: var(--sbt-bradius-24) var(--sbt-bradius-24) 0 0;
-                padding: calculateRem(24px) calculateRem(24px) calculateRem(8px) calculateRem(24px);
-            }
-
-            .sb-modal-content {
-                min-height: calculateRem(100px);
-                padding: calculateRem(16px) calculateRem(24px);
-                overflow-y: auto;
-                background: var(--sb-modal-content-bg);
-            }
-
-            .sb-modal-actions {
-                padding: calculateRem(8px) calculateRem(24px) calculateRem(24px);
-                background: var(--sb-modal-actions-bg);
-                border-top: calculateRem(0px) solid var(--gray-100);
-                border-radius: 0 0 var(--sbt-bradius-24) var(--sbt-bradius-24);
-            }
-
-            &>.close {
-                height: calculateRem(24px);
-                width: calculateRem(24px);
-                border-radius: 50%;
-                box-shadow: var(--sbt-box-shadow-3px);
-                right: calculateRem(12px) !important;
-                top: calculateRem(12px) !important;
-                background-color: var(--white);
-
-                &::before {
-                    content: "\2715";
-                    font-size: calculateRem(18px);
-                    color: var(--red);
-                }
-
-            }
-        }
-    }
-
-    .ui.modal>:last-child {
-        border-bottom-left-radius: var(--sbt-bradius-24);
-        border-bottom-right-radius: var(--sbt-bradius-24);
-    }
-
-    .ui.modal>.icon:first-child+*,
-    .ui.modal>:first-child:not(.icon) {
-        border-top-left-radius: var(--sbt-bradius-24);
-        border-top-right-radius: var(--sbt-bradius-24);
     }
 
     .ui.grid.sb-form.m-0.sb-workspace-modal.p-16 {
