@@ -355,6 +355,9 @@ html[data-mode='darkmode'] {
     --grey-nuance-darker: var(--color-111);
     --fade-grey: #f2f2f2;
 
+    .mat-dropdown__options .mat-pseudo-checkbox {
+        border-color: var(--white);
+    }
    
     .mat-select-placeholder {
         color: rgba(255,255,255,.4);
@@ -747,7 +750,7 @@ html[data-mode='darkmode'] {
         background: rgba(var(--sbt-sidemenu-overlay-bg), 0.8);
     }
 
-    .logo.sbt-logo,
+    // .logo.sbt-logo,
     .five.wide.column .d-flex.logo,
     .sb-onboard .brand-logo,
     .terms-modal-logo {
