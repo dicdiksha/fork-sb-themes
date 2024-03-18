@@ -62,33 +62,33 @@ html[layout='joy'] {
     }
 
     // Material Modal inside joy layout
-    .cdk-overlay-container .cdk-global-overlay-wrapper .mat-dialog-container {
-        border-radius: 24px;
-
-        .sb-mat__modal {
-            .mat-dialog-title {
-                padding: calculateRem(16px) calculateRem(24px) 0 calculateRem(24px);
-                border-top-left-radius: calculateRem(24px);
-                border-top-right-radius: calculateRem(24px);
+    .cdk-overlay-pane {
+        &.material-modal {
+            .mat-mdc-dialog-container .mdc-dialog__surface {
+                border-radius: 1.5rem;
+                background-color: var(--sbt-body-bg);
             }
+            .mdc-dialog__title {
+                background: inherit;
+                color: inherit;
+                padding: 1rem 1rem 0 1rem;
+                .close-btn {
+                    background: var(--white);
+                    width: calculateRem(24px);
+                    height: calculateRem(24px);
+                    border-radius: 50%;
+                    box-shadow: var(--sbt-box-shadow-3px);
 
-            &__actions {
-                border: none;
-                padding: 0 calculateRem(16px) calculateRem(24px) calculateRem(16px);
-                border-bottom-left-radius: calculateRem(24px);
-                border-bottom-right-radius: calculateRem(24px);
-            }
-
-            .close-btn {
-                background: var(--white);
-                width: calculateRem(24px);
-                height: calculateRem(24px);
-                border-radius: 50%;
-                box-shadow: var(--sbt-box-shadow-3px);
-
-                &::after {
-                    color: var(--red);
+                    &::after {
+                        color: var(--red);
+                    }
                 }
+            }
+            .sb-mat__modal__content {
+                border-bottom: none;
+            }
+            .sb-mat__modal__actions {
+                padding: 0 1rem 1.5rem;
             }
         }
     }
@@ -466,125 +466,65 @@ mat-tooltip-component .mat-tooltip {
 .cdk-overlay-pane {
 
     &.material-modal {
-        overflow: auto;
         width: 100%;
-        height: 100%;
-    }
 
-    .mat-dialog-container {
-        padding: 0;
-        border-radius: calculateRem(4px);
-        overflow: hidden;
-        background-color: transparent;
-        box-shadow: none;
-        position: relative;
-
-        .mat-dialog-content {
-            margin: 0;
-            padding: 0;
-            max-height: 100%;
-            overflow: auto;
+        .mat-mdc-dialog-container {
+            max-width: 45rem;
+            margin: auto;
         }
-    }
 
-    &.overflow-visible {
-        max-width: 100% !important;
+        .mat-mdc-dialog-container .mdc-dialog__surface {
+            border-radius: 4px;
+        }
 
-        .mat-dialog-container {
-            overflow: inherit;
+        .mdc-dialog__title {
+            padding: 4px 1rem;
+            background: var(--primary-color);
+            color: var(--mat-modal-title-txt);
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+                .close-btn {
+                    background: inherit;
+                    box-shadow: none;
+                    outline: none;
+                    border: none;
+                    margin-left: auto;
+                    position: relative;
+                    cursor: pointer;
 
-            .mat-dialog-content {
-                overflow: inherit;
-            }
+                    &::after {
+                        color: var(--white);
+                        content: '\2715';
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: calculateRem(16px);
+                        font-weight: 700;
+                    }
+                }
+        }
+
+        .mdc-dialog__title::before {
+            display: none;
         }
 
         .sb-mat__modal__content {
-            overflow-y: visible;
-            max-height: inherit;
-        }
-    }
-
-    .sb-mat__modal {
-        max-width: calculateRem(720px);
-        width: 100%;
-        margin: 2% auto 0 auto;
-
-        &--small {
-            max-width: 480px;
+            padding: 1rem;
+            border-bottom: 1px solid var(--gray-200);
         }
 
-        &--large {
-            max-width: 56.25rem;
-        }
-
-        &--fullscreen {
-            max-width: 100%;
-            margin: 0 auto;
-        }
-
-        &__content {
-            padding: calculateRem(16px);
-            max-height: 400px;
-            min-height: 100px;
-            background: var(--mat-accordion-expansion-panel-bg);
-            color: var(--gray-800);
-            overflow-y: auto;
-        }
-
-        &__actions {
+        .sb-mat__modal__actions {
             display: flex;
-            padding: 8px 16px;
-            align-items: center;
-            background-color: var(--mat-accordion-expansion-panel-bg);
-            border-top: 0.5px solid var(--gray-100);
             justify-content: flex-end;
-            border-bottom-left-radius: calculateRem(4px);
-            border-bottom-right-radius: calculateRem(4px);
-
-            html[layout='joy'] & {
-                border: none;
-            }
-        }
-
-        .mat-dialog-title {
-            background: var(--mat-modal-title-bg);
-            color: var(--mat-modal-title-txt);
-            display: flex;
-            align-items: center;
-            padding: calculateRem(4px) calculateRem(16px);
-            margin: 0;
-            min-height: calculateRem(40px);
-            border-top-left-radius: calculateRem(4px);
-            border-top-right-radius: calculateRem(4px);
-
-            .title {
-                font-size: calculateRem(16px);
-                font-weight: 700;
-                flex: 1;
-            }
-        }
-
-        .close-btn {
-            background: inherit;
-            box-shadow: none;
-            outline: none;
-            border: none;
-            margin-left: auto;
-            position: relative;
-            cursor: pointer;
-
-            &::after {
-                color: var(--white);
-                content: '\2715';
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                font-size: calculateRem(16px);
-                font-weight: 700;
-            }
+            padding: .5rem 1rem;
         }
     }
+
+    &.overflow-visible {}
+
 }
 
 // Notification Popup
