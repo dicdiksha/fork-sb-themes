@@ -468,6 +468,29 @@ mat-tooltip-component .mat-tooltip {
     &.material-modal {
         width: 100%;
 
+        &.material-modal--small {
+            .mat-mdc-dialog-container {
+                max-width: 30rem;
+            }
+        }
+
+        &.overflow-visible {
+            max-height: 100%;
+            height: auto;
+            overflow: auto;
+            .mdc-dialog__container {
+                overflow: inherit;
+            }
+            .mat-mdc-dialog-container .mdc-dialog__content {
+                overflow: inherit;
+                max-height: 100%;
+            }
+            .sb-mat__modal__content {
+                overflow: visible;
+                max-height: inherit;
+            }
+        }
+
         .mat-mdc-dialog-container {
             max-width: 45rem;
             margin: auto;
@@ -522,8 +545,6 @@ mat-tooltip-component .mat-tooltip {
             padding: .5rem 1rem;
         }
     }
-
-    &.overflow-visible {}
 
 }
 
