@@ -474,6 +474,18 @@ mat-tooltip-component .mat-tooltip {
             }
         }
 
+        &.material-modal--fullscreen {
+            max-width: 100% !important;
+            .mat-mdc-dialog-container {
+                max-width: 100%;
+                margin: auto;
+
+                .mdc-dialog__surface {
+                    border-radius: 0 !important;
+                }
+            }
+        }
+
         &.overflow-visible {
             max-height: 100%;
             height: auto;
@@ -493,7 +505,7 @@ mat-tooltip-component .mat-tooltip {
 
         .mat-mdc-dialog-container {
             max-width: 45rem;
-            margin: auto;
+            margin: 2rem auto;
         }
 
         .mat-mdc-dialog-container .mdc-dialog__surface {
@@ -508,6 +520,7 @@ mat-tooltip-component .mat-tooltip {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            min-height: 2.5rem;
                 .close-btn {
                     background: inherit;
                     box-shadow: none;
