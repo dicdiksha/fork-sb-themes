@@ -505,7 +505,7 @@ mat-tooltip-component .mat-tooltip {
 
         .mat-mdc-dialog-container {
             max-width: 45rem;
-            margin: 2rem auto;
+            margin: 1rem auto;
         }
 
         .mat-mdc-dialog-container .mdc-dialog__surface {
@@ -597,162 +597,51 @@ mat-tooltip-component .mat-tooltip {
 
 /* Material Select starts here */
 .sb-mat__dropdown {
-    &.mat-form-field-appearance-fill {
-        .mat-form-field-wrapper {
-            padding-bottom: 0;
-        }
-
-        &.mat-form-field-should-float {
-            .mat-form-field-flex {
-                align-items: flex-end;
-            }
-
-            .mat-select {
-                margin-top: 2px;
-            }
-
-            .mat-select-arrow-wrapper {
-                transform: translateY(-30%);
-            }
-        }
-
-        .mat-select-arrow-wrapper {
-            transform: translateY(0%);
-        }
-
-        .mat-form-field-flex {
+    &.mat-mdc-form-field {
+        .mat-mdc-text-field-wrapper {
+            width: 100%;
+            height: 3rem;
             background-color: var(--mat-dropdown-form-bg);
-            // padding: 8px 12px 0 16px;
-            border: 1px solid var(--primary-color);
-            border-radius: calculateRem(4px);
-            height: calculateRem(48px);
-            padding: calculateRem(8px) calculateRem(16px);
-            align-items: center;
-
-            html[layout='joy'] & {
-                border-radius: calculateRem(24px);
-                border-color: transparent;
+            border-radius: 1.5rem;
+            .mat-mdc-form-field-flex .mat-mdc-floating-label {
+                top: 24px;
             }
         }
 
-        .mat-form-field-infix {
-            padding: 0;
-            border-top: none;
-            // width: 100%;
-            // height: calc(100% - 8px);
+        .mdc-text-field--no-label:not(.mdc-text-field--outlined):not(.mdc-text-field--textarea) .mat-mdc-form-field-infix {
+            padding-top: 12px;
+            padding-bottom: 12px;
         }
 
-        // .mat-select, .mat-select-trigger {
-        //     height: 100%;
-        // }
-
-        .mat-select-trigger {
-            height: calculateRem(20px);
+        .mat-mdc-text-field-wrapper:not(.mdc-text-field--outlined) .mat-mdc-form-field-infix {
+            padding-top: 16px;
+            padding-bottom: 8px;
         }
 
-        .mat-select-value {
+        .mat-mdc-form-field-infix {
+            min-height: 3rem;
+        }
+
+        .mat-mdc-select-value {
+            color: var(--primary-color);
             font-weight: bold;
+            font-size: .875rem;
         }
 
-        .mat-select-arrow,
-        .mat-select-value {
+        .mat-mdc-select-arrow {
             color: var(--primary-color);
         }
 
-        .mat-form-field-label {
-            color: var(--gray-800);
-            margin-bottom: 0;
-
-            &.mat-form-field-empty {
-                transform: translateY(6px);
-            }
-        }
-
-        .mat-select-arrow {
-            margin: 4px 4px 0 4px;
-        }
-
-        &.mat-form-field.mat-focused.mat-primary .mat-select-arrow {
-            color: var(--primary-color);
-        }
-
-        &.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
-            transform: translateY(-.4em) scale(.7);
-            margin-bottom: 0;
-        }
-
-        .mat-form-field-underline {
+        .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::before {
             display: none;
         }
-    }
 
-    &--nolabel {
-
-        &.sb-mat__dropdown--language {
-            &.mat-form-field-appearance-fill {
-
-                .mat-select-arrow,
-                .mat-select-value {
-                    color: var(--secondary-color);
-                }
-
-                .mat-select-value-text span {
-                    display: flex;
-                    align-items: center;
-
-                    &::before {
-                        content: "";
-                        background: url(/assets/images/Language.svg) no-repeat center !important;
-                        height: calculateRem(20px);
-                        width: calculateRem(20px);
-                        display: block;
-                        margin-right: calculateRem(8px);
-
-                        html[dir="rtl"] & {
-                            margin-left: calculateRem(8px);
-                        }
-                    }
-                }
-            }
+        .mat-mdc-form-field-subscript-wrapper {
+            display: none;
         }
 
-        &.mat-form-field-appearance-fill {
-
-            &.mat-form-field-should-float {
-                .mat-form-field-flex {
-                    align-items: center;
-                }
-
-                .mat-select-arrow-wrapper {
-                    transform: translateY(0%);
-                }
-            }
-
-            .mat-form-field-flex {
-                padding: 0 calculateRem(16px);
-                height: calculateRem(48px);
-                display: flex;
-                align-items: center;
-                box-shadow: var(--sbt-box-shadow-6px);
-            }
-
-            .mat-form-field-infix {
-                border-top: none;
-                padding: 0;
-            }
-
-            .mat-select {
-                font-size: calculateRem(16px);
-            }
-
-            .mat-select-arrow {
-                margin-top: 0;
-            }
-
-            .mat-select-arrow-wrapper {
-                transform: unset;
-            }
-
+        .mat-mdc-select-arrow-wrapper {
+            transform: translateY(-4px);
         }
     }
 }
