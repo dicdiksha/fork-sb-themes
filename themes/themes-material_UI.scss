@@ -22,6 +22,8 @@ html[data-theme='default'] {
 
     // Material Select
     --mat-dropdown-form-bg: var(--white);
+    --mat-select-trigger-text-size: 0.875rem;
+    --mdc-filled-text-field-label-text-size: 0.875rem;
 
     .sb-mat {
         &__accordion.mat-accordion {
@@ -99,6 +101,11 @@ html[layout='joy'] {
             .mat-mdc-text-field-wrapper {
                 border-radius: 1.5rem;
                 border: none;
+            }
+            &.sb-mat__dropdown--language {
+                .mat-mdc-text-field-wrapper {
+                    box-shadow: var(--sbt-box-shadow-6px);
+                }
             }
         }
     }
@@ -528,6 +535,7 @@ mat-tooltip-component .mat-tooltip {
         .mat-mdc-dialog-container {
             max-width: 45rem;
             margin: 1rem auto;
+            --mdc-dialog-container-elevation-shadow: none;
         }
 
         .mat-mdc-dialog-container .mdc-dialog__surface {
@@ -622,13 +630,9 @@ mat-tooltip-component .mat-tooltip {
     &.mat-mdc-form-field {
         .mat-mdc-text-field-wrapper {
             width: 100%;
-            height: 3rem;
             background-color: var(--mat-dropdown-form-bg);
             border-radius: 4px;
             border: 1px solid var(--primary-color);
-            .mat-mdc-form-field-flex .mat-mdc-floating-label {
-                top: 24px;
-            }
         }
 
         .mdc-text-field--no-label:not(.mdc-text-field--outlined):not(.mdc-text-field--textarea) .mat-mdc-form-field-infix {
@@ -637,7 +641,7 @@ mat-tooltip-component .mat-tooltip {
         }
 
         .mat-mdc-text-field-wrapper:not(.mdc-text-field--outlined) .mat-mdc-form-field-infix {
-            padding-top: 16px;
+            padding-top: 18px;
             padding-bottom: 8px;
         }
 
@@ -647,8 +651,17 @@ mat-tooltip-component .mat-tooltip {
 
         .mat-mdc-select-value {
             color: var(--primary-color);
-            font-weight: bold;
-            font-size: .875rem;
+            font-weight: 500;
+        }
+
+        .mdc-floating-label.mat-mdc-floating-label:not([class*="mdc-floating-label--float-above"]) {
+            top: 26px;
+        }
+
+        &.sb-mat__dropdown--language {
+            .mat-mdc-select-value {
+                font-size: 1rem;
+            }
         }
 
         .mat-mdc-select-arrow {
@@ -677,6 +690,10 @@ mat-tooltip-component .mat-tooltip {
 
         &.sb-mat__dropdown--language {
             &.mat-mdc-form-field {
+
+                .mat-mdc-text-field-wrapper {
+                    height: 3rem;
+                }
 
                 .mat-mdc-select-arrow {
                     color: var(--secondary-color);
