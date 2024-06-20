@@ -1431,5 +1431,7 @@ html[data-mode='darkmode'] {
     .ui.radio.checkbox label {
         color: var(--black);
     }
-
+    .sb-btn-secondary, .sb-btn-primary {
+        color: var(--sb-btn-default-color);
+    }
 }
