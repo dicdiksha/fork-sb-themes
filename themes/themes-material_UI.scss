@@ -543,6 +543,7 @@ mat-tooltip-component .mat-tooltip {
             overflow: auto;
             .mdc-dialog__container {
                 overflow: inherit;
+                max-height: calc(100vh - 100px);
             }
             .mat-mdc-dialog-container .mdc-dialog__content {
                 overflow: inherit;
@@ -667,7 +668,7 @@ mat-tooltip-component .mat-tooltip {
         }
 
         .mat-mdc-text-field-wrapper:not(.mdc-text-field--outlined) .mat-mdc-form-field-infix {
-            padding-top: 18px;
+            padding-top: 15px;
             padding-bottom: 8px;
         }
 
