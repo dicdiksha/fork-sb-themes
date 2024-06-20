@@ -3,6 +3,7 @@
 html[data-mode='darkmode'] {
     // --primary-theme: var(--primary-theme);
     // --primary-theme-hsl: 49.3, 100%;
+    --primary-theme-contrast: var(--white);
     --primary-color: hsl(var(--primary-theme-hsl), 58.24%);
     --primary-0: hsl(var(--primary-theme-hsl), 88%); // #fffcee;
     --primary-100: hsl(var(--primary-theme-hsl), 82%); // #fff8db; // default button bg
@@ -756,7 +757,7 @@ html[data-mode='darkmode'] {
     .terms-modal-logo {
         padding: 0.5rem;
         border-radius: 0 0 1rem 1rem;
-        background: var(--white);
+        //background: var(--white);
     }
 
     .terms-modal-logo {
@@ -921,9 +922,11 @@ html[data-mode='darkmode'] {
     }
 
     .content-video__player__details {
-        background: transparent !important;
+        background: transparent;
     }
-
+    .player-fullscreen .content-video__player__details {
+        background: var(--color-444);
+    }
     .content-metadeta,
     .ui.styled.accordion,
     .ui.styled.accordion .accordion,
