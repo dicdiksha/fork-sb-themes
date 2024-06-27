@@ -357,9 +357,15 @@ html[data-mode='darkmode'] {
     --fade-grey: #f2f2f2;
 
     .mat-dropdown__options .mat-pseudo-checkbox {
-        border-color: var(--white);
+        border-color: var(--primary-color);
+        background: transparent;
     }
-   
+    .mat-primary .mat-pseudo-checkbox-checked.mat-pseudo-checkbox-full::after, .mat-primary .mat-pseudo-checkbox-indeterminate.mat-pseudo-checkbox-full::after {
+        color: var(--primary-color);
+    }
+    .mat-mdc-option:hover:not(.mdc-list-item--disabled) {
+        background-color: var(--color-444);
+    }
     .mat-select-placeholder {
         color: rgba(255,255,255,.4);
     }
@@ -1003,6 +1009,9 @@ html[data-mode='darkmode'] {
         &:active,
         &.active {
             background-color: var(--primary-800);
+            i.icon{
+                color: var(--black) !important;
+            }
         }
     }
 

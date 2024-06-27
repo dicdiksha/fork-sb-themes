@@ -177,6 +177,7 @@ html[data-theme='default'][data-mode='darkmode'] {
     .sb-mat__datepicker .mat-mdc-icon-button svg,
     .mat-mdc-dialog-container .mdc-dialog__content{
         color: var(--primary-color-contrast) !important;
+        -webkit-text-fill-color: var(--primary-color-contrast) !important;
     }
     .mat-mdc-form-field.mat-mdc-form-field-type-mat-input .mat-mdc-text-field-wrapper{
         background: transparent;
@@ -679,6 +680,7 @@ mat-tooltip-component .mat-tooltip {
         .mat-mdc-select-value {
             color: var(--primary-color);
             font-weight: 500;
+            -webkit-text-fill-color: var(--primary-color);
         }
 
         .mdc-floating-label.mat-mdc-floating-label:not([class*="mdc-floating-label--float-above"]) {
